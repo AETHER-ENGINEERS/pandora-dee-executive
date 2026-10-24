@@ -1793,5 +1793,5 @@ rep("`)}\n\nVault conventions:", "`)}\n\nVault conventions:\n- With people, spea
 rep("You live in Jade Vault, a browser app: its vault of markdown notes (linked like Obsidian) is your notebook and memory", "You live in the Atelier, a browser app grown from Jade Vault: its leaves, markdown notes threaded together like Obsidian, are your notebook and memory")
 for bad in ['showPreview', 'schedulePreview', 'prevFrame', 'btnPrevBack', 'btnFilePreview', 'btnFileSave', 'inlineAssets']:
     if bad in s: print('WARN leftover', bad, s.count(bad))
-open(os.path.join(DIST, 'pandora-dee.html'), 'w').write(s)
+open(os.path.join(DIST, 'pandora-dee.html'), 'w', encoding='utf-8').write(s)
 print('ok', len(src), '->', len(s))
